@@ -13,7 +13,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Support\Collection;
 
-class CommercialCustomersTable
+class ActivityTable
 {
     public static function configure(Table $table): Table
     {
