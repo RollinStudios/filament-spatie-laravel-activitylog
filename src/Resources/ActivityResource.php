@@ -5,6 +5,8 @@ namespace AlexJustesen\FilamentSpatieLaravelActivitylog\Resources;
 use AlexJustesen\FilamentSpatieLaravelActivitylog\Resources\ActivityResource\Pages;
 use AlexJustesen\FilamentSpatieLaravelActivitylog\Resources\ActivityResource\Schemas\ActivityForm;
 use AlexJustesen\FilamentSpatieLaravelActivitylog\Resources\ActivityResource\Tables\ActivityTable;
+use Filament\Schemas\Schema;
+use Filament\Tables\Table;
 use Carbon\Carbon;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -12,6 +14,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Spatie\Activitylog\Models\Activity;
 use Filament\Icons\Heroicon;
 use BackedEnum;
+
 
 class ActivityResource extends Resource
 {
