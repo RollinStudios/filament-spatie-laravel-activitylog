@@ -4,8 +4,8 @@ namespace AlexJustesen\FilamentSpatieLaravelActivitylog\Resources;
 
 use AlexJustesen\FilamentSpatieLaravelActivitylog\Resources\ActivityResource\Pages;
 use AlexJustesen\FilamentSpatieLaravelActivitylog\Resources\ActivityResource\Schemas\ActivityForm;
+use AlexJustesen\FilamentSpatieLaravelActivitylog\Resources\ActivityResource\Tables\ActivityTable;
 use Carbon\Carbon;
-use Filament\Forms;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Illuminate\Database\Eloquent\Builder;
