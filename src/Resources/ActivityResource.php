@@ -12,7 +12,7 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Illuminate\Database\Eloquent\Builder;
 use Spatie\Activitylog\Models\Activity;
-use Filament\Icons\Heroicon;
+use Filament\Support\Icons\Heroicon;
 use BackedEnum;
 
 
