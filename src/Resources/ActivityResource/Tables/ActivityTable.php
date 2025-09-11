@@ -1,24 +1,19 @@
 <?php
-
 namespace AlexJustesen\FilamentSpatieLaravelActivitylog\Resources\ActivityResource\Tables;
 
-
-use App\Settings\GeneralSettings;
-use Filament\Actions\BulkAction;
-use Filament\Actions\EditAction;
-use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
+use Carbon\Carbon;
 
 class ActivityTable
 {
     public static function configure(Table $table): Table
     {
-
         return $table
             ->columns([
                 TextColumn::make('id')
@@ -64,15 +59,12 @@ class ActivityTable
                     })
                     ->indicateUsing(function (array $data): array {
                         $indicators = [];
-
                         if ($data['logged_from'] ?? null) {
                             $indicators['logged_from'] = 'Created from ' . Carbon::parse($data['logged_from'])->toFormattedDateString();
                         }
-
                         if ($data['logged_until'] ?? null) {
                             $indicators['logged_until'] = 'Created until ' . Carbon::parse($data['logged_until'])->toFormattedDateString();
                         }
-
                         return $indicators;
                     }),
             ])
