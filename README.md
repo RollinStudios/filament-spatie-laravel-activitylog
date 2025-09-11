@@ -1,3 +1,8 @@
+#ATTENTION, PLEASE READ!
+
+This is a fork of alexjustesen/filament-spatie-laravel-activitylog that add Filament V4 support. I did it in 5 minutes because I needed it for a sample project, but I spent 0 time reviewing it. There might be issues. Use at your own risk. I might come back to it and check it more thouroughly later.
+
+
 # View your activity logs inside of Filament.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/alexjustesen/filament-spatie-laravel-activitylog.svg?style=flat-square)](https://packagist.org/packages/alexjustesen/filament-spatie-laravel-activitylog)
