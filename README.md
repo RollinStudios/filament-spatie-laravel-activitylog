@@ -1,4 +1,4 @@
-#ATTENTION, PLEASE READ!
+# ATTENTION, PLEASE READ!
 
 This is a fork of alexjustesen/filament-spatie-laravel-activitylog that add Filament V4 support. I did it in 5 minutes because I needed it for a sample project, but I spent 0 time reviewing it. There might be issues. Use at your own risk. I might come back to it and check it more thouroughly later.
 
