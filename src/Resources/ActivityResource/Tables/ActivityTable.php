@@ -9,6 +9,7 @@ use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
+use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Support\Collection;
@@ -45,9 +46,9 @@ class ActivityTable
                     ]),
                 Filter::make('created_at')
                     ->form([
-                        Forms\Components\DatePicker::make('logged_from')
+                        DatePicker::make('logged_from')
                             ->label('Logged from'),
-                        Forms\Components\DatePicker::make('logged_until')
+                        DatePicker::make('logged_until')
                             ->label('Logged until'),
                     ])
                     ->query(function (Builder $query, array $data): Builder {
